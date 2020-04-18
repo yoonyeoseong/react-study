@@ -3,6 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const name = "React";
+  const style = {
+    backgroundColor: 'black'
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -15,8 +19,9 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
+          style = {style}
         >
-          Learn React
+          {name === 'React' && "Learn 리액트"}
         </a>
       </header>
     </div>
